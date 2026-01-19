@@ -1,0 +1,30 @@
+package golangweb
+
+import (
+	"fmt"
+	"net/http"
+	"testing"
+)
+
+func downloadfile(writer http.ResponseWriter, request *http.Request) {
+	file:=request.URL.Query().Get("file")
+
+	if file==""{
+		writer.WriteHeader(http.StatusBadRequest)
+		fmt.Fprint(writer, "File is required")
+		return
+	}
+	writer.Header().Set("Content-Disposition", "attachment; filename=" + file)
+	http.ServeFile(writer, request, "./resources/" + file)
+}
+
+func TestDownloadFile(t *testing.T){
+	server:= http.Server{
+		Addr: "localhost:8080",
+		Handler: http.HandlerFunc(downloadfile),
+	}
+	err := server.ListenAndServe()
+	if err != nil {
+		panic(err)
+	}
+}

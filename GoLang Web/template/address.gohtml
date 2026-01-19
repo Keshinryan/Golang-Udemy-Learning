@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<body>
+{{/* Template for displaying a list of addresses */}}
+Name: {{.Name}}<br>
+{{with .Address}}
+<h1>Street: {{.Street}}</h1>
+<h1>City: {{.City}}</h1>
+{{else}}
+<h1>No Address Provided</h1>
+{{end}}
+</body>
+</html>

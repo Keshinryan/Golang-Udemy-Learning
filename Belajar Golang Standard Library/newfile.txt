@@ -1,0 +1,13 @@
+Hello, this is a new file created using os.OpenFile in Go!
+Hello, this is a new file created using os.OpenFile in Go!
+Hello, this is a new file created using os.OpenFile in Go!
+Hello, this is a new file created using os.OpenFile in Go!
+Hello, this is a new file created using os.OpenFile in Go!
+Hello, this is a new file created using os.OpenFile in Go!
+Hello, this is a new file created using os.OpenFile in Go!
+Hello, this is a new file created using os.OpenFile in Go!
+Hello, this is a new file created using os.OpenFile in Go!
+Hello, this is a new file created using os.OpenFile in Go!
+Hello, this is a new file created using os.OpenFile in Go!
+This is an appended line.
+This is an appended line.

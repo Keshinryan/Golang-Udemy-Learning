@@ -1,0 +1,22 @@
+{
+    "Firstname": "jason",
+    "Lastname": "patrick",
+    "Age": 23,
+    "Hobbies": [
+        "Game",
+        "Reading",
+        "Watching"
+    ],
+    "Address": [
+        {
+            "Street": "Jl ...",
+            "Country": "Indonesia",
+            "PostalCode": "90870"
+        },
+        {
+            "Street": "Jl ...",
+            "Country": "Indonesia",
+            "PostalCode": "90870"
+        }
+    ]
+}
